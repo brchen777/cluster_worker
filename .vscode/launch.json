@@ -7,12 +7,17 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Debug Cluster",
             "program": "${workspaceRoot}/cluster.js",
-            // "program": "${workspaceRoot}/worker_threads.js",
-            "autoAttachChildProcesses": true,
+            "autoAttachChildProcesses": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Worker Threads",
+            "program": "${workspaceRoot}/worker_threads.js",
             "runtimeArgs": [
-                "--experimental-modules"
+                "--experimental-worker"
             ]
         }
     ]

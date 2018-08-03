@@ -7,7 +7,7 @@
     parentPort.on('message', (msg) => {
         let { range } = msg;
         const shaArray = [];
-        while( range-- > 0 ) {
+        while(range-- > 0) {
             const hexStr = sha256(Math.random().toString());
             const hexBin = Buffer.from(hexStr);
             shaArray.push(hexBin);
