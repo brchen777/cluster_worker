@@ -24,7 +24,7 @@ $ npm run cluster
 ### Worker Threads
 * Run system (use node):
 ```bash
-$ node worker_threads.js
+$ node --experimental-worker worker_threads.js
 ```
 * Run system (use npm):
 ```bash
