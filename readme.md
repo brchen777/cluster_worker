@@ -12,21 +12,21 @@ $ npm install
 
 ## Build and Run
 ### Cluster
-* Run system (use node):
+* Run (use node):
 ```bash
 $ node cluster.js
 ```
-* Run system (use npm):
+* Run (use npm):
 ```bash
 $ npm run cluster
 ```
 
 ### Worker Threads
-* Run system (use node):
+* Run (use node):
 ```bash
 $ node --experimental-worker worker_threads.js
 ```
-* Run system (use npm):
+* Run (use npm):
 ```bash
 $ npm run worker_threads
 ```
