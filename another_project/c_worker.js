@@ -8,7 +8,7 @@
 
     for (let i = 1; i <= thread_cnt; i++) {
         const wt_worker_args = { process_id: env.id, thread_id: i };
-        const wt_worker = new Worker('./res/wt_worker.js', { workerData: wt_worker_args });
+        const wt_worker = new Worker('./wt_worker.js', { workerData: wt_worker_args });
 
         wt_worker.on('message', (msg) => {
             console.log(msg)
