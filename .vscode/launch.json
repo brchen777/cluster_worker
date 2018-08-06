@@ -19,6 +19,16 @@
             "runtimeArgs": [
                 "--experimental-worker"
             ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug All",
+            "program": "${workspaceRoot}/all.js",
+            "autoAttachChildProcesses": true,
+            "runtimeArgs": [
+                "--experimental-worker"
+            ]
         }
     ]
 }

@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cluster": "node cluster.js",
-    "worker_threads": "node --experimental-worker worker_threads.js"
+    "worker_threads": "node --experimental-worker worker_threads.js",
+    "all": "node --experimental-worker all.js"
   },
   "author": "",
   "license": "ISC",
