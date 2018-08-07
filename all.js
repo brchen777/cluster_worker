@@ -14,7 +14,7 @@
             cluster.setupMaster({
                 cwd: './another_project',
                 exec: './c_worker.js',
-                args: ['--use', 'http']
+                args: ['arg1', 'arg2']
             });
             
             const cluster_args = { id: i };
