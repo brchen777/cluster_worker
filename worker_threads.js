@@ -3,7 +3,7 @@
 
     const { Worker } = require('worker_threads');
 
-    const arrayCount = 2000000;
+    const arrayCount = 5000000;
     const threadCount = require('os').cpus().length;
     const range = (arrayCount / threadCount);
     const initialTime = new Date();
@@ -25,6 +25,7 @@
             if (finishCount === threadCount) {
                 allShaResult = Buffer.concat(allShaResult);
                 console.log(`All workers are finish`);
+                process.exit(0);
             }
         });
         worker.postMessage({ range });
